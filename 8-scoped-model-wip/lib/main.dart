@@ -1,17 +1,30 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
+import 'package:scoped_model/scoped_model.dart';
 
 void main() => runApp(MyApp());
 
+class CounterModel extends Model {
+  int _counter = 0;
+  int get counter => _counter;
+  void increment() {
+    _counter++;
+    notifyListeners();
+  }
+}
+
 class MyApp extends StatelessWidget {
+  final CounterModel model = CounterModel();
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return ScopedModel<CounterModel>(
+      model: model,
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
+        home: MyHomePage(title: 'Flutter Demo Home Page'),
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -19,23 +32,11 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
   final String title;
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-  Color _color = Colors.green;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-      _color = Color.fromRGBO(Random().nextInt(255), Random().nextInt(255),
-          Random().nextInt(255), 1);
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,18 +50,23 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'You have pushed the button this many times:',
             ),
-            Text(
-              '$_counter',
-              style: TextStyle(color: _color, fontSize: 80),
+            ScopedModelDescendant<CounterModel>(
+              builder: (context, child, model) => Text(
+                '${model.counter}',
+                style: TextStyle(fontSize: 80),
+              ),
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: Icon(Icons.add),
-      ),
+      floatingActionButton:
+          ScopedModelDescendant<CounterModel>(builder: (context, child, model) {
+        return FloatingActionButton(
+          onPressed: model.increment,
+          tooltip: 'Increment',
+          child: Icon(Icons.add),
+        );
+      }),
     );
   }
 }
