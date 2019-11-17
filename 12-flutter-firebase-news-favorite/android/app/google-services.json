@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1097186459121",
+    "firebase_url": "https://news-6c99e.firebaseio.com",
+    "project_id": "news-6c99e",
+    "storage_bucket": "news-6c99e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097186459121:android:fca9686216f9b052339850",
+        "android_client_info": {
+          "package_name": "co.varisoft.news.reader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097186459121-2e6qcjgf5sf9dfet4ncujlmguuc2he34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9svxsfagy86aBnL6_P3iz5aCN9ad61UI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097186459121-2e6qcjgf5sf9dfet4ncujlmguuc2he34.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

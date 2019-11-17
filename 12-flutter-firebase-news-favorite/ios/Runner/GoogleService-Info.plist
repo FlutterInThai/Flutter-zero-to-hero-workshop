@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1097186459121-gjhkncu8sl5j8qf7tndkakqg1kjg6jql.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1097186459121-gjhkncu8sl5j8qf7tndkakqg1kjg6jql</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBFt4OrQpNJvIfuGu20gaI_47WkGD0WgLg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1097186459121</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>co.varisoft.news.reader</string>
+	<key>PROJECT_ID</key>
+	<string>news-6c99e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>news-6c99e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1097186459121:ios:4d1df721446f47c9339850</string>
+	<key>DATABASE_URL</key>
+	<string>https://news-6c99e.firebaseio.com</string>
+</dict>
+</plist>
