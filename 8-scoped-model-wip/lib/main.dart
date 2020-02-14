@@ -39,6 +39,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
+    print('build');
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -51,11 +52,13 @@ class _MyHomePageState extends State<MyHomePage> {
               'You have pushed the button this many times:',
             ),
             ScopedModelDescendant<CounterModel>(
-              builder: (context, child, model) => Text(
+                builder: (context, child, model) {
+              print('update text');
+              return Text(
                 '${model.counter}',
                 style: TextStyle(fontSize: 80),
-              ),
-            ),
+              );
+            }),
           ],
         ),
       ),

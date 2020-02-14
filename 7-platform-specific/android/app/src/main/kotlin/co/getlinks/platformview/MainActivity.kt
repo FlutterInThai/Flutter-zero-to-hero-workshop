@@ -10,11 +10,18 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugins.GeneratedPluginRegistrant
 
 class MainActivity: FlutterActivity() {
+
+  companion object {
+    const val CHANNEL = "co.getlinks.platform.channel"
+  }
+
   private lateinit var channel:MethodChannel
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     GeneratedPluginRegistrant.registerWith(this)
+
     channel = MethodChannel(flutterView, CHANNEL)
+
     channel.setMethodCallHandler { call, result ->
       if(call.method == "showEditText") {
         val intent = Intent(this, EditTextActivity::class.java)
@@ -47,9 +54,5 @@ class MainActivity: FlutterActivity() {
         Log.d("DATA",stringData)
       }
     }
-  }
-
-  companion object {
-    const val CHANNEL = "co.getlinks.platform.channel"
   }
 }

@@ -1,10 +1,10 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=/Library/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/satjanut/Documents/Work/Flutter course/platform_view"
+export "FLUTTER_ROOT=/Users/getlinks/lib/flutter"
+export "FLUTTER_APPLICATION_PATH=/Users/getlinks/getlinks/Flutter-zero-to-hero-workshop/7-platform-specific"
 export "FLUTTER_TARGET=lib/main.dart"
 export "FLUTTER_BUILD_DIR=build"
 export "SYMROOT=${SOURCE_ROOT}/../build/ios"
-export "FLUTTER_FRAMEWORK_DIR=/Library/flutter/bin/cache/artifacts/engine/ios"
+export "FLUTTER_FRAMEWORK_DIR=/Users/getlinks/lib/flutter/bin/cache/artifacts/engine/ios"
 export "FLUTTER_BUILD_NAME=1.0.0"
 export "FLUTTER_BUILD_NUMBER=1"

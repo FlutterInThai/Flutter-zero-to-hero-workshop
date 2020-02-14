@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1030154261609",
+    "firebase_url": "https://blog-app-89aa3.firebaseio.com",
+    "project_id": "blog-app-89aa3",
+    "storage_bucket": "blog-app-89aa3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030154261609:android:a68a74f41a13dc121d7ef8",
+        "android_client_info": {
+          "package_name": "com.varisoft.blog_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1030154261609-qdrovk4n9jamk9nngm9j73vsmftm0hk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXws_mJwLBCc2eWZzRgLdL83GVqZYAL5A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1030154261609-qdrovk4n9jamk9nngm9j73vsmftm0hk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
