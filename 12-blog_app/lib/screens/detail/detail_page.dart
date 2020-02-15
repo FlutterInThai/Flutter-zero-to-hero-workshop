@@ -12,6 +12,7 @@ class DetailPage extends StatelessWidget {
         title: Text('Detail'),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           if (post.imageUrl != null)
             Image.network(post.imageUrl, fit: BoxFit.fill),
@@ -22,7 +23,7 @@ class DetailPage extends StatelessWidget {
               children: <Widget>[
                 Text(
                   post.title,
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
                 Text(post.content),
               ],
